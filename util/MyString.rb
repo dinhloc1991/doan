@@ -55,6 +55,7 @@ class MyString
   end
 
   def self.gsubArrayAtBeginUseChuThuong(array, stringBanDau)
+    stringBanDau = stripString(stringBanDau)
     string = myDownCase(stringBanDau)
     array.map { |e|
       e = myDownCase(e)
